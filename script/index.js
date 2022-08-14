@@ -10,8 +10,6 @@ const msgRequirement = 'Por favor, selecione a medida do igrediente!';
 
 
 
-
-
 // Mensagem requisito de medida
 function showMsg() {
     const elementP = document.createElement('p');
