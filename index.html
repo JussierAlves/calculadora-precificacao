@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora para Precificação de Alimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Título e subtítulo da página -->
+    <header class="header">
+        <h1>Calculadora para Precificação de Alimentos</h1>
+        <h2>Calculadora desenvolvida para sugerir o valor de venda de um produto com base no custo dos igredientes e demais gastos.</h2>
+    </header>
+
+    <div class="table-form">
+        <!-- Formulário -->
+        <form action="">
+            <input type="text" id="ingredientText" placeholder="Ingrediente">
+            <div id="measure">
+                <select name="typeMeasure" id="typeMeasure">
+                    <option value="none">Medida</option>
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                    <option value="liter">litro</option>
+                    <option value="ml">ml</option>
+                </select>
+                <input type="text" name="weight" id="weightText" placeholder="Peso">
+            </div>
+            <input type="text" name="ingredientPrice" id="ingredientPriceText" placeholder="Valor (R$)">
+            <input type="text" name="usedOnRecipe" id="usedOnRecipe" placeholder="Utilizado na receita (g)">
+            <input type="button" value="Adicionar Ingrediente">
+        </form>
+        <!-- Tabela -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingrediente</th>
+                    <th>Peso</th>
+                    <th>Preço</th>
+                    <th>Preço por Kg</th>
+                    <th>Custo do Ingrediente</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>
